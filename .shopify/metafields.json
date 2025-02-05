@@ -14,9 +14,9 @@
       "key": "product_description",
       "namespace": "custom",
       "name": "product_description",
-      "description": "product description to be shown in a collapsible row",
+      "description": "product description to be shown in a collapsible text field",
       "type": {
-        "name": "multi_line_text_field",
+        "name": "rich_text_field",
         "category": "TEXT"
       }
     }

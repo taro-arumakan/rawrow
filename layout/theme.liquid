@@ -29,6 +29,16 @@
       <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
     {%- endunless -%}
 
+    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0726/9187/6081/files/RR2019-Regular.otf?v=1738741647" as="font" type="font/otf" crossorigin>
+
+    <style>
+      @font-face {
+        font-family: "RR2019";
+        src: url(https://cdn.shopify.com/s/files/1/0726/9187/6081/files/RR2019-Regular.otf?v=1738741647) format('opentype');
+        font-weight: normal;
+      }
+    </style>
+
     {%- render 'social-meta-tags' -%}
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}
@@ -69,11 +79,11 @@
 
   {% liquid
     assign features_class = ''
-  
+
     if settings.show_button_transition
       assign features_class = features_class | append: 'features--button-transition '
     endif
-  
+
     if settings.show_image_zoom_on_hover
       assign features_class = features_class | append: 'features--zoom-image '
     endif

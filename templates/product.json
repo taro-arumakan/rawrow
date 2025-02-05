@@ -14,6 +14,7 @@
       "blocks": {
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "title": {
@@ -35,13 +36,6 @@
         "separator": {
           "type": "separator",
           "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
-          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -68,6 +62,24 @@
             "payment_button_text_color": ""
           }
         },
+        "accordion_eb4ANU": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "詳細",
+            "content": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
         "complementary_products": {
           "type": "complementary_products",
           "settings": {
@@ -77,17 +89,6 @@
             "stack_products": false,
             "show_quick_buy": true
           }
-        },
-        "accordion_eb4ANU": {
-          "type": "accordion",
-          "settings": {
-            "show_below_gallery": false,
-            "icon": "none",
-            "title": "Description",
-            "content": "<p>{{ product.metafields.custom.product_description | metafield_tag }}</p>",
-            "liquid": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -96,12 +97,12 @@
         "price",
         "payment_terms",
         "separator",
-        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "complementary_products",
-        "accordion_eb4ANU"
+        "accordion_eb4ANU",
+        "description",
+        "complementary_products"
       ],
       "settings": {
         "color_scheme": "",

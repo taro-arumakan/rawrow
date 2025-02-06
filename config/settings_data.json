@@ -10,6 +10,7 @@
 {
   "current": {
     "section_vertical_spacing": "md",
+    "button_border_radius": 4,
     "product_rating_color": "#1c1c1c",
     "product_on_sale_accent": "#e32c2b",
     "product_sold_out_badge_background": "#efefef",
@@ -19,19 +20,22 @@
     "error_color": "#cb2b2b",
     "heading_font": "instrument_sans_n4",
     "heading_text_transform": "normal",
-    "heading_letter_spacing": 18,
+    "heading_letter_spacing": 0,
     "text_font": "noto_sans_japanese_n4",
     "text_font_size_desktop": 14,
     "button_text_font": "heading",
     "button_letter_spacing": 18,
+    "discount_mode": "percentage",
+    "cart_icon": "shopping_bag_sharp",
+    "favicon": "{{ shop.brand.square_logo }}",
     "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#efefef",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text_color": "#1c1c1c",
-          "primary_button_background": "#1c1c1c",
+          "text_color": "#231815",
+          "primary_button_background": "{{ shop.brand.colors.primary[0].background }}",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"

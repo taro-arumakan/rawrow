@@ -25,6 +25,8 @@
     "text_font_size_desktop": 14,
     "button_text_font": "heading",
     "button_letter_spacing": 18,
+    "round_color_swatches": true,
+    "color_swatch_config": "BLACK: #000000\nKHAKI: #C3B091\nBROWN: #A52A2A\nDEEP GREEN: #013220\nCHARCOAL: #36454F\nNAVY: #000080\nBEIGE: #F5F5DC\nOLIVE: #808000\nGRAY: #808080\nMUSTARD: #FFDB58\nIVORY: #FFFFF0\nPURPLE: #800080\nPLAY BLACK: #101010\nWALK YELLOW: #FFD700\nMIX: #D3D3D3 (blend approximation)\nBLUE: #0000FF\nRED: #FF0000\nNATURAL: #EDE6D6\nVIVID GREEN: #00FF00\nSILVER: #C0C0C0\nSPACE GRAY: #4A4A4A\nCARAMEL: #85461E\nGREEN: #008000\nORANGE: #FFA500\nSAGE GREEN: #9CBA7F\nMATT BLACK: #2B2B2B\nSKY CORAL: #FF7E79\nASH GRAY: #B2BEB5\nDEEP PURPLE: #301934\nVANILLA: #F3E5AB\nROAD YELLOW: #FFD700",
     "discount_mode": "percentage",
     "cart_icon": "shopping_bag_sharp",
     "favicon": "{{ shop.brand.square_logo }}",

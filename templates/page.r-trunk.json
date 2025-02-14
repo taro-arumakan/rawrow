@@ -94,6 +94,10 @@
         "image_xKbMwj",
         "image_kjhUd3"
       ],
+      "custom_css": [
+        ".images-list-item:nth-of-type(3),.images-list-item:nth-of-type(4) {margin-top: 12vh;}",
+        ".images-list-item:nth-of-type(7),.images-list-item:nth-of-type(9) {margin-top: 8vh;}"
+      ],
       "settings": {
         "color_scheme": "",
         "image_position": "center",
@@ -137,7 +141,7 @@
         "image_fmbrA8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/lp_rtrunk_015.gif"
+            "image": "shopify://shop_images/lp_rtrunk_015.png"
           }
         },
         "image_CFawAC": {
@@ -169,6 +173,11 @@
         "image_CFawAC",
         "image_jAg87Y",
         "image_MbxMzN"
+      ],
+      "custom_css": [
+        ".images-list-item:nth-of-type(6) {margin-top: 12vh;}",
+        ".images-list-item:nth-of-type(1),.images-list-item:nth-of-type(3),.images-list-item:nth-of-type(5),.images-list-item:nth-of-type(7) {margin-top: 8vh;}",
+        ".images-list-item:nth-of-type(8),.images-list-item:nth-of-type(9){margin-top: 4vh;}"
       ],
       "settings": {
         "color_scheme": "",

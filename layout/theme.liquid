@@ -31,16 +31,6 @@
 
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 
-    <link rel="preload" href="https://cdn.shopify.com/s/files/1/0726/9187/6081/files/RR2019-Regular.otf?v=1738741647" as="font" type="font/otf" crossorigin>
-
-    <style>
-      @font-face {
-        font-family: "RR2019";
-        src: url(https://cdn.shopify.com/s/files/1/0726/9187/6081/files/RR2019-Regular.otf?v=1738741647) format('opentype');
-        font-weight: normal;
-      }
-    </style>
-
     {%- render 'social-meta-tags' -%}
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}
@@ -73,6 +63,31 @@
 
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+
+    <script type="text/javascript">
+      function registerTouchEvents() {
+        // all product card elements with secondary image
+        var productCards = document.querySelectorAll('.product-card__figure:has(.product-card__image--secondary)');
+        // add touchstart and touchend event
+        for(let productCard of productCards) {
+           productCard.addEventListener('touchstart', (e) => {
+            const secondaryImage = productCard.querySelector('.product-card__image--secondary');
+            const primaryImage = productCard.querySelector('.product-card__image--primary');
+            secondaryImage.style.opacity = 1;
+            primaryImage.style.opacity = 0;
+            secondaryImage.style.visibility = 'visible';
+          });
+          productCard.addEventListener('touchend', () => {
+            const secondaryImage = productCard.querySelector('.product-card__image--secondary');
+            const primaryImage = productCard.querySelector('.product-card__image--primary');
+            secondaryImage.style.opacity = 0;
+            primaryImage.style.opacity = 1;
+            secondaryImage.style.visibility = 'hidden';
+          });
+        }
+      }
+      window.onload = registerTouchEvents;
+    </script>
 
     {{ content_for_header }}
 

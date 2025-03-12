@@ -30,6 +30,8 @@
     {%- endunless -%}
 
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <script src="{{ 'animate.js' | asset_url }}" defer></script>
+    {{- 'animate.css' | asset_url | stylesheet_tag: preload: true -}}
 
     {%- render 'social-meta-tags' -%}
     {%- render 'microdata-schema' -%}

@@ -8,6 +8,7 @@
  * ------------------------------------------------------------
  */
 {
+  "wrapper": "div.page-tt_handle",
   "sections": {
     "main": {
       "type": "main-page",

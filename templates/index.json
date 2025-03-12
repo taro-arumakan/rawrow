@@ -8,6 +8,7 @@
  * ------------------------------------------------------------
  */
 {
+  "wrapper": "div.rawrow-index-page",
   "sections": {
     "slideshow": {
       "type": "slideshow",
@@ -108,7 +109,7 @@
         "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 5,
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "controls_color": "#ed8a00"
       }
     },

@@ -406,6 +406,7 @@
       "block_order": [
         "heading_L8imzJ"
       ],
+      "disabled": true,
       "custom_css": [
         ".section-spacing {padding-block-end: 1rem;}"
       ],

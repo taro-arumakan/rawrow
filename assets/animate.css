@@ -74,17 +74,22 @@
 
 .rawrow-index-page,
 .page-r_trunk,
+.page-r_bag,
 .page-tt_handle {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center right;
 }
 .page-r_trunk {
   background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rtrunk.png?v=1741771648&width=3000");
+}
+.page-r_bag {
+  background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rawrow.png?v=1741771648&width=3000");
 }
 .page-tt_handle {
   background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_tt_handle.png?v=1741771648&width=3000");
 }
 .rawrow-index-page {
-  background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rawrow.png?v=1741771648&width=3000");
+  background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rtrunk.png?v=1741771648&width=3000");
 }

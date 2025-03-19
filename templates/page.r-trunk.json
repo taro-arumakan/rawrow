@@ -67,7 +67,7 @@
         "image_kj8tnW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/lp_rtrunk_007_mp4.png"
+            "image": "shopify://shop_images/lp_rtrunk_007_durable_hard_shell_tumble_test.gif"
           }
         },
         "image_xKbMwj": {
@@ -97,7 +97,8 @@
       ],
       "custom_css": [
         ".images-list-item:nth-of-type(3),.images-list-item:nth-of-type(4) {margin-top: 12vh;}",
-        ".images-list-item:nth-of-type(5),.images-list-item:nth-of-type(7),.images-list-item:nth-of-type(9) {margin-top: 8vh;}"
+        ".images-list-item:nth-of-type(5),.images-list-item:nth-of-type(7),.images-list-item:nth-of-type(9) {margin-top: 8vh;}",
+        ".images-list-item:nth-of-type(8) > img {width: 100%;}"
       ],
       "settings": {
         "color_scheme": "",

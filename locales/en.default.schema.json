@@ -893,6 +893,10 @@
           "name": "Image",
           "image_info": "1200 x 1200px .jpg recommended",
           "content_info": "Image without any texts."
+        },
+        "video": {
+          "name": "Video",
+          "content_info": "Video without any texts."
         }
       },
       "presets": {

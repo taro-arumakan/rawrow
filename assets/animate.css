@@ -80,6 +80,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
+  overflow: hidden;
 }
 .page-r_trunk {
   background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rtrunk.png?v=1741771648&width=3000");

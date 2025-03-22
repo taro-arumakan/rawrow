@@ -28,10 +28,12 @@
             "image": "shopify://shop_images/lp_rbag_000.png"
           }
         },
-        "image_kDbdKr": {
-          "type": "image",
+        "video_8KrXi3": {
+          "type": "video",
           "settings": {
-            "image": "shopify://shop_images/lp_rbag_002_movie.png"
+            "video": "shopify://files/videos/lp_rbag_002_RAWROW_String.mp4",
+            "autoplay": true,
+            "show_controls": false
           }
         },
         "image_dNzhUR": {
@@ -61,7 +63,7 @@
       },
       "block_order": [
         "image_zmfUBA",
-        "image_kDbdKr",
+        "video_8KrXi3",
         "image_dNzhUR",
         "image_Yj4YXx",
         "image_DK8BUN",

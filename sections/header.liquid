@@ -225,6 +225,12 @@
           {%- endif -%}
         {%- endfor -%}
 
+        <li class="header__instagram-link sm-max:hidden">
+          <a href="{{ settings.social_instagram }}" target="_blank" rel="noopener" >
+            {%- render 'icon' with 'instagram' -%}
+          </a>
+        </li>
+
         {%- if shop.customer_accounts_enabled -%}
           <li class="header__account-link sm-max:hidden">
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">

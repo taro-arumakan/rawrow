@@ -83,7 +83,7 @@ therefore using a different structure for the Shadow DOM template
         {%- if shop.customer_accounts_enabled -%}
           <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="text-with-icon smallcaps sm:hidden">
             {%- render 'icon' with 'account', width: 20 -%}
-            
+
             {%- if customer -%}
               {{- 'header.general.account' | t -}}
             {%- else -%}
@@ -107,6 +107,13 @@ therefore using a different structure for the Shadow DOM template
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        <div class="header__instagram-link">
+          <a href="{{ settings.social_instagram }}" target="_blank" rel="noopener" class="text-with-icon smallcaps sm:hidden">
+            {%- render 'icon' with 'instagram', width: 20 -%}
+          </a>
+        </div>
+
       </div>
     {%- endif -%}
   </div>

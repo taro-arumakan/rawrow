@@ -107,6 +107,9 @@
         "links",
         "text"
       ],
+      "custom_css": [
+        ".footer {margin-top: 12vh;}"
+      ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,

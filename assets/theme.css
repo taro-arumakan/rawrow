@@ -4193,7 +4193,7 @@ product-rerender {
     --product-list-items-per-row: var(--collection-items-per-row-compact);
   }
 
-  .collection .product-list[collection-desktop-layout="compact"] .product-card__info {
+  .collection .product-list[collection-desktop-layout="compact"] .product-card__info .title-and-price {
     display: none;
   }
 

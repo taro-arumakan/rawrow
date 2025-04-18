@@ -33,10 +33,6 @@
           "type": "payment_terms",
           "settings": {}
         },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -73,6 +69,17 @@
             "page": ""
           }
         },
+        "accordion_n4cgNU": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Product Care",
+            "content": "{{ product.metafields.custom.product_care | metafield_tag }}",
+            "liquid": "",
+            "page": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -96,11 +103,11 @@
         "title",
         "price",
         "payment_terms",
-        "separator",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "accordion_eb4ANU",
+        "accordion_n4cgNU",
         "description",
         "complementary_products"
       ],

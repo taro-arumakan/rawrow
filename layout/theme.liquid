@@ -42,6 +42,10 @@
       <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
     {%- endif -%}
 
+    {%- if request.path == '/pages/store-locator' -%}
+      {{- 'storelocator.css' | asset_url | stylesheet_tag: preload: true -}}
+    {%- endif %}
+
     <script>
       if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
         const importMapPolyfill = document.createElement('script');

@@ -18,6 +18,16 @@
         "name": "rich_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "product_care",
+      "namespace": "custom",
+      "name": "product_care",
+      "description": "Product care text to display on the product page",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [],

@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_FWz3a6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LA4jdT": {
+          "type": "heading",
+          "settings": {
+            "text": "STORE LOCATOR",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LA4jdT"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "custom_liquid_iwEVMJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div>\n<section style=\"margin-bottom: 0;\" class=\"section\">\n<div class=\"container prose\">\n<ul class=\"StoreListMokuji\">\n<li class=\"Item\"><a href=\"#general-1\"> 北海道・東北 </a></li>\n<li class=\"Item\"><a href=\"#general-2\"> 関東（東京以外） </a></li>\n<li class=\"Item\"><a href=\"#general-3\"> 東京 </a></li>\n<li class=\"Item\"><a href=\"#general-4\"> 中部 </a></li>\n<li class=\"Item\"><a href=\"#general-5\"> 関西 </a></li>\n<li class=\"Item\"><a href=\"#general-6\"> 中国・四国 </a></li>\n<li class=\"Item\"><a href=\"#general-7\"> 九州 </a></li>\n</ul>\n</div>\n</section>\n</div>",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        ".section-header > h1 {display: none;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    }
+  },
+  "order": [
+    "rich_text_FWz3a6",
+    "custom_liquid_iwEVMJ",
+    "main"
+  ]
+}

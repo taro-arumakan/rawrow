@@ -1,0 +1,71 @@
+@supports (height: 1lh) {
+  a {
+    /* background: none !important; */
+  }
+}
+@supports (height: 1lh) {
+:is(.link, .prose li>a:not(.h1, .h2, .h3, .h4, .h5, .h6, .button, .link-faded, .link-faded-reverse)) {
+    background: linear-gradient(to right, #FA9600, #FA9600) 0 min(100%, 1.2lh) / 100% 1px no-repeat !important;
+    transition: background-size .3s ease-in-out;
+  }
+}
+@media screen and (pointer: fine) {
+  :is(.link, .prose a:not(.h1, .h2, .h3, .h4, .h5, .h6, .button, .link-faded, .link-faded-reverse)):hover {
+    background-size: 0 1px !important;
+  }
+}
+
+.StoreListMokuji {
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  flex-wrap: wrap;
+  letter-spacing: 0.08em;
+  padding: 0;
+}
+
+.StoreListMokuji .Item a {
+  padding: 5px 5px;
+  display: block;
+}
+
+.SectionStore__Wrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.SectionStore__SubTitle {
+  padding: 30px 18px 18px;
+  margin: 0;
+  width: 100%;
+  scroll-margin-top: 80px;
+  width: calc(100% - 120px);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #ea5506;
+  padding-bottom: 20px;
+}
+
+.SectionStore__Item .Item__Title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.SectionStore__Item {
+  letter-spacing: .08em;
+  padding: 30px 18px;
+  border-right: none;
+  border-bottom: 1px solid #FA9600;
+  width: 100%;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .SectionStore__Item {
+    width: 45%;
+    margin: 20px;
+  }
+}

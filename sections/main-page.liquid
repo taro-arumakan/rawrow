@@ -9,7 +9,9 @@
         </div>
       {%- endif -%}
 
-      {%- if page.content != empty %}
+      {%- if section.settings.render_store_locations -%}
+        {%- render 'store-list', table_html: page.content -%}
+      {%- elsif page.content != empty %}
         <div class="prose">
           {{- page.content -}}
         </div>
@@ -34,6 +36,12 @@
       "id": "show_title",
       "label": "t:sections.main_page.show_title",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "render_store_locations",
+      "label": "Render as store locations",
+      "default": false
     },
     {
       "type": "select",

@@ -1,0 +1,52 @@
+{% comment %}
+  This section parses an HTML table passed as `table_html` and generates div elements for display.
+{% endcomment %}
+<div class="SectionStore">
+  <div class="SectionStore__Inner container">
+    {% assign rows = table_html | split: '<tr>' %}
+    {% assign headers = rows[1] | split: '</tr>' | first | split: '<td>' | slice: 1 %}
+
+    {% capture areas %}{% endcapture %}
+
+    {% for row in rows offset:2 %}
+      {% assign columns = row | split: '<td>' %}
+      {% assign name = columns[1] | strip_html | strip %}
+      {% assign postal_code = columns[2] | strip_html | strip %}
+      {% assign store_address = columns[3] | strip_html | strip %}
+      {% assign phone = columns[4] | strip_html | strip %}
+      {% assign map_link = columns[5] | strip_html | strip %}
+      {% assign area = columns[6] | strip_html | strip %}
+      {% unless areas contains area %}
+        {% capture areas %}{{ areas }}|{{ area }}{% endcapture %}
+      {% endunless %}
+    {% endfor %}
+
+    {% assign areas = areas | split: '|' | compact %}
+
+    {% for area in areas %}
+      {% unless area == blank %}
+      <div class="SectionStore__Wrap">
+        <div id="general-{{ forloop.index }}" class="SectionStore__SubTitle">{{ area }}</div>
+        {% for row in rows offset:2 %}
+          {% assign columns = row | split: '<td>' %}
+          {% assign name = columns[1] | strip_html | strip %}
+          {% assign postal_code = columns[2] | strip_html | strip %}
+          {% assign store_address = columns[3] | strip_html | strip %}
+          {% assign phone = columns[4] | strip_html | strip %}
+          {% assign map_link = columns[5] | strip_html | strip %}
+          {% assign row_area = columns[6] | strip_html | strip %}
+
+          {% if row_area == area %}
+            <div class="SectionStore__Item">
+              <h3 class="Item__Title">{{ name }}</h3>
+              <div class="Item__Yubin">{{ postal_code }}</div>
+              <div class="Item__Address"><a href="{{ map_link }}">{{ store_address }}</a></div>
+              <div class="Item__Tel"><a href="tel:{{ phone }}">{{ phone }}</a></div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>

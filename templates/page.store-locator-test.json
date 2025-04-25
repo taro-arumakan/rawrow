@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "rich_text_FWz3a6": {
+    "rich_text_HLFHrw": {
       "type": "rich-text",
       "blocks": {
-        "heading_LA4jdT": {
+        "heading_fiznJk": {
           "type": "heading",
           "settings": {
             "text": "STORE LOCATOR",
@@ -21,17 +21,17 @@
         }
       },
       "block_order": [
-        "heading_LA4jdT"
+        "heading_fiznJk"
       ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
       }
     },
-    "custom_liquid_iwEVMJ": {
+    "custom_liquid_pFEei3": {
       "type": "custom-liquid",
       "settings": {
         "color_scheme": "",
@@ -44,17 +44,17 @@
     },
     "main": {
       "type": "main-page",
-      "custom_css": [],
       "settings": {
         "color_scheme": "",
         "show_title": false,
+        "render_store_locations": true,
         "page_width": "lg"
       }
     }
   },
   "order": [
-    "rich_text_FWz3a6",
-    "custom_liquid_iwEVMJ",
+    "rich_text_HLFHrw",
+    "custom_liquid_pFEei3",
     "main"
   ]
 }

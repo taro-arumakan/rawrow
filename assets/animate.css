@@ -73,6 +73,7 @@
 }
 
 .rawrow-index-page,
+.page-about,
 .page-r_trunk,
 .page-r_bag,
 .page-tt_handle {
@@ -82,6 +83,7 @@
   background-position: center right;
   overflow: hidden;
 }
+.page-about,
 .page-r_trunk {
   background-image: url("//jp.rawrow.com/cdn/shop/files/page_background_rtrunk.png?v=1741771648&width=3000");
 }
